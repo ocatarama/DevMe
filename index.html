@@ -5,9 +5,36 @@
         <meta charset="UTF-8">
 
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/navbar.css">
     </head>
 
     <body>
-        <h1>DevelopMe</h1>
+        <navbar class="navbar">
+            <div class="navContainer">
+                 <a href="#" class="navitem">Acasa</a>
+                 <a href="#" class="navitem">Info</a>
+
+                 <img class="navlogo" src="img/logo/DevMe/DevMeLogo.png">
+
+                 <a href="#" class="navitem">Despre noi</a>
+                 <a href="#" class="navitem">Contact</a>
+
+                 <div class="mobile-nav" onclick="mobileToggle(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </navbar>
+
+        <div class="container">
+            <div class="content">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+
+            <span class="counter"></span>
+        </div>
+
     </body>
 </html>
