@@ -1,0 +1,19 @@
+@import url("constants.css");
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--darkgrey);
+}
+
+h1 {
+    font-family: 'Segoe UI Black', sans-serif;
+    font-weight: 800;
+    color: var(--gold);
+}
