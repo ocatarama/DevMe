@@ -4,10 +4,23 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: normal;
 }
 
 body {
     background-color: var(--darkgrey);
+}
+
+h1 {
+    font-weight: 800;
+    color: var(--gold);
+    font-size: clamp(3rem, 6vw, 6rem);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
 }

@@ -1,0 +1,61 @@
+.content {
+    display:flex;
+    height: 100%;
+    width: 100%;
+}
+
+.left{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 12vw;
+}
+
+.left h1 {
+    margin-bottom: 0;
+}
+
+.left .hometext {
+    color: var(--cement-white);
+    display: flex;
+    flex-direction: row;
+
+    font-weight: 200;
+    font-size: clamp(1rem, 1.4vw, 2rem);
+
+    margin-left: 10px;
+}
+
+.left svg {
+    height: 8.5vw;
+    min-height: 110px;
+}
+
+.left .hometext span {
+    padding-top: 15px;
+}
+
+.left .hometext span p {
+    margin: 0;
+}
+
+.left .hometext span p:last-child {
+    margin-top: 20px;
+    width: 200px;
+}
+
+.right{
+    flex: 1;
+}
+
+@media screen and (min-width: 650px)
+{
+    .content {
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+    }
+}

@@ -1,12 +1,14 @@
 @import url(constants.css);
 
 .navbar {
-    background-color: none;
+    background-color: var(--darkgrey);
     height: 80px;
     width: 100vw;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid white;
+    position: absolute;
+    top: 0;
 }
 
 .navbar .navContainer {
@@ -21,6 +23,10 @@
     text-decoration: none;
     margin-right: 30px;
     font-weight: 200;
+}
+
+.navContainer .navitem:last-child {
+    margin-right:0;
 }
 
 .navContainer .navlogo {
