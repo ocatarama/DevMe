@@ -42,6 +42,10 @@
     position: relative;
 }
 
+.navButtons {
+    display: none;
+}
+
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
