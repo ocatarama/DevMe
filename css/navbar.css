@@ -6,9 +6,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid white;
-    position: absolute;
-    top: 0;
+    position: relative;
 }
 
 .navbar .navContainer {
@@ -34,12 +32,6 @@
     height: 50px;
     margin-right: 20px;
 }
-
-
-
-
-
-
 
 /* MOBILE NAV */
 
@@ -69,4 +61,53 @@
     margin: 6px 0;
     transition: 0.4s;
     border-radius: 3px;
-  }
+}
+
+@media screen and (min-width: 650px)
+{
+    .navbar {
+        position: absolute;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    .mobile-nav{
+        display: block;
+        position: relative;
+    }
+
+    .navbar {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navContainer .navitem {
+        display: none;
+    }
+
+    .navButtons {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        z-index: 100;
+        background-color: var(--darkgrey);
+    }
+
+    .navButtons .navitem {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        color: var(--cement-white);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .navButtons .navitem:hover {
+        background-color: var(--gold);
+        color: var(--darkgrey);
+        font-weight: 500;
+    }
+}

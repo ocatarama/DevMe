@@ -3,6 +3,7 @@
     <head>
         <title>DevelopMe Iaşi</title>
         <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
 
         <link rel="stylesheet" href="css/index.css"> <!--Main css-->
         <link rel="stylesheet" href="css/navbar.css"> <!--Navbar css-->
@@ -25,6 +26,13 @@
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
+            </div>
+
+            <div class="navButtons" id="n-btns">
+                <a href="#" class="navitem">Acasa</a>
+                <a href="#" class="navitem">Info</a>
+                <a href="#" class="navitem">Despre noi</a>
+                <a href="#" class="navitem">Contact</a>
             </div>
         </navbar>
 
@@ -58,10 +66,13 @@
                         <img src="img/AC/Facultatea-de-Automatica-si-Calculatoare.jpg">
                     </div>
                 </div>
-            </div>
 
-            <span class="counter"></span>
+                <div id="countdown"></div>
+            </div>
         </div>
 
+    
+        <script src="js/countdown.js"></script>
+        <script src="js/navbar.js"></script>
     </body>
 </html>
