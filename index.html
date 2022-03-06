@@ -8,17 +8,21 @@
         <link rel="stylesheet" href="css/index.css"> <!--Main css-->
         <link rel="stylesheet" href="css/navbar.css"> <!--Navbar css-->
         <link rel="stylesheet" href="css/acasa.css"> <!--Acasa/Main css-->
+        <link rel="stylesheet" href="css/info.css"> <!--Info css-->
+
+        <!-- Font-Awesome -->
+        <script src="https://kit.fontawesome.com/2ee69d0673.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <navbar class="navbar">
             <div class="navContainer">
-                 <a href="#" class="navitem">Acasa</a>
-                 <a href="#" class="navitem">Info</a>
+                 <a href="#info" class="navitem">Informatii</a>
+                 <a href="#" class="navitem">Calendar</a>
 
                  <img class="navlogo" src="img/logo/DevMe/DevMeLogo.png">
 
-                 <a href="#" class="navitem">Despre noi</a>
+                 <a href="#" class="navitem">Sponsori</a>
                  <a href="#" class="navitem">Contact</a>
             </div>
 
@@ -36,7 +40,8 @@
             </div>
         </navbar>
 
-        <div class="container">
+        <!-- ============ HOME ============ -->
+        <div class="container home">
             <div class="content">
                 <div class="left">
                     <h1>DevelopMe</h1>
@@ -66,11 +71,56 @@
                         <img src="img/AC/Facultatea-de-Automatica-si-Calculatoare.jpg">
                     </div>
                 </div>
-
-                <div id="countdown"></div>
             </div>
+            <div id="countdown"></div>
         </div>
 
+        <!-- ============ INFORMATII ============ -->
+
+        <div class="container info" id="info">
+            <div class="i-title">
+                <h2>What is DevMe?</h2>
+            </div>
+
+            <div class="i-about">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="250" viewBox="0 0 24 302.349">
+                    <g id="Group_50" data-name="Group 50" transform="translate(0 -0.344)">
+                      <line id="Line_14" data-name="Line 14" y2="289.508" transform="translate(11.5 12.184)" fill="none" stroke="#f1f1f1" stroke-linecap="round" stroke-width="2"/>
+                      <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(0 0.344)" fill="none" stroke="#ebebeb" stroke-width="2">
+                        <circle cx="12" cy="12" r="12" stroke="none"/>
+                        <circle cx="12" cy="12" r="11" fill="none"/>
+                      </g>
+                    </g>
+                </svg>
+
+                <div class="about-text">
+                    <p>In 2022 se va desfășura prima ediție a taberei de vară „DevelopMe(DevMe)”, tabără ce își propune să unească elevi dornici de socializare și de a pătrunde în acest mediu universitar dinainte de a-și alege o facultate.
+                    </p>
+                    <p>În cadrul acestei tabere principalele activități care vor fi desfășurate sunt cursuri de specialitate la facultate din diverși ani universitari, dar și diferite activități menite să le dezvolte spiritul competitiv, capacitatea de a socializa și de a lucra în echipă, capacitatea de a organiza/planifica diverse evenimente, creativitatea și încrederea în sine.
+                    </p>
+                    <p>Tabăra va avea loc pe o perioada de o saptamana și ne propunem sa avem un număr de 30 de participanți. Aceștia vor avea un program tipic studentesc, cu ore de dimineața, cursuri de luni  pana vineri, nelipsita mancare de la cantina și nu în ultimul rand: Examenul Final.
+                    </p>
+                </div>
+            </div>
+
+            <div class="i-signs">
+                <div class="i-where">
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Unde?</h4>
+                    </span>
+                    <p>Campus "Tudor Vladimirescu", Iaşi</p>
+                </div>
+
+                <div class="i-when">
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Când?</h4>
+                    </span>
+                    <p>Săptămâna 9-17 Iulie, 2022</p>
+                </div>
+            </div>
+        </div>
     
         <script src="js/countdown.js"></script>
         <script src="js/navbar.js"></script>
