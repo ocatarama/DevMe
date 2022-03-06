@@ -21,7 +21,7 @@ h1 {
 h2 {
     font-weight: 800;
     color: var(--gold);
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-size: clamp(3rem, 4vw, 5rem);
 }
 
 h4 {
@@ -42,10 +42,6 @@ h4 {
 ::-webkit-scrollbar {
     width: 5px;
     z-index: 99;
-  }
-  /* Track */
-  ::-webkit-scrollbar-track {
-  
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
