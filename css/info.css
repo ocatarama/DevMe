@@ -192,6 +192,24 @@
     font-size: clamp(0.8rem, 1vw, 1.2rem);
 }
 
+.howto-step:nth-child(2) {
+    transform: translateX(200%);
+    transition: 1.5s ease;
+}
+
+.howto-step:nth-child(3) {
+    transform: translateX(-200%);
+    transition-delay: 1s;
+    transition: 1.5s ease;
+}
+
+.howto-step:nth-child(4) {
+    transform: translateX(200%);
+    transition-delay: 2s;
+    transition: 1.5s ease;
+}
+
+
 
 
 /* -======================= MEDIA SCREEN (LAPTOP MODE) =======================- */
