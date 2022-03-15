@@ -35,12 +35,15 @@
     width: 70%;
 }
 
+/* -======================= SEMNE WHEN/WHERE =======================- */
+
 .i-signs {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
+    margin-bottom: 100px;
 }
 
 .i-signs i {
@@ -60,6 +63,148 @@
     margin-bottom: 50px;
     padding: 0 40px;
     text-align: center;
+}
+
+/* -======================= IMAGINI INSTAGRAM =======================- */
+
+.i-imgs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.img-junk {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-overlay {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.img-overlay img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.img-overlay .instaHover {
+    color: var(--cement-white);
+    font-size: 50px;
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    z-index: 100;
+    display: none;
+}
+
+.img-overlay:hover .i-banner{
+    opacity: 0.3;
+}
+
+.img-overlay:hover .instaHover {
+    display: inline;
+}
+
+/* -======================= HOW TO HACK UR SUMMER =======================- */
+
+.i-howto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.howto-title {
+    width: 40%;
+    min-width: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.howto-title::before {
+    content:"";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: var(--cement-white);
+    top: 53%;
+    left: 0;
+}
+
+.howto-step {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.howto-step-number {
+    flex:1.5;
+    display: flex;
+    justify-content: center;
+}
+
+.howto-step-number h3 {
+    border-bottom: 1px solid var(--cement-white);
+}
+
+.howto-step-line {
+    flex: 1;
+    display: none;
+    justify-content: center;
+}
+
+.howto-step-line .line {
+    width: 1.5px;
+    height: clamp(7rem, 100vw, 10rem);
+    background-color: var(--cement-white);
+}
+
+.howto-step-text {
+    flex: 4;
+    color: var(--cement-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.howto-step-text-title {
+    font-size: clamp(1.6rem, 2vw, 4rem);
+    text-align: center;
+}
+
+.howto-step-text-p {
+    margin: 0;
+    margin-left: 2px;
+    text-align: justify;
+    text-justify: auto;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+}
+
+
+
+/* -======================= MEDIA SCREEN (LAPTOP MODE) =======================- */
+
+@media screen and (min-width: 1080px) {
+    .img-junk {
+        flex-direction: row
+    }
+
+    .img-overlay {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
 }
 
 @media screen and (min-width: 650px) {
@@ -86,4 +231,33 @@
     .i-where, .i-when {
         margin: 0;
     }
+
+    .howto-step {
+        flex-direction: row;
+    }
+
+    .howto-step-number h3 {
+        border-bottom: none;
+    }
+
+    .howto-step-line {
+        display: flex;
+    }
+
+    .howto-step-text {
+        align-items: flex-start;
+    }
+
+    .howto-step:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+    
+    .howto-step:nth-child(3)  .howto-step-text {
+        align-items: flex-end;
+    }
+    
+    .howto-step:nth-child(3) .howto-step-text-p {
+        text-align: right;
+    }
+
 }
