@@ -4,7 +4,7 @@ document.addEventListener('scroll', () => {
     var x = document.getElementById("whatIs");
     var offset = 0.0;
  
-    if((window.pageYOffset >= x.offsetTop - 600) && executed3 == 0)
+    if((window.pageYOffset >= x.offsetTop - 600 ) && executed3 == 0)
     {
         executed3 = 1;
         setInterval(function(){
@@ -33,7 +33,7 @@ document.addEventListener('scroll', () => {
     var where = document.getElementById("iWhere");
     var when = document.getElementById("iWhen");
 
-    if(window.pageYOffset >= x.offsetTop - 500)
+    if(window.pageYOffset >= x.offsetTop - 600)
     {
         where.style.transform = "translateX(0)";
         when.style.transform = "translateX(0)";
