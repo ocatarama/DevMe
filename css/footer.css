@@ -1,0 +1,65 @@
+.lsection{
+	color:  white;
+	text-align: left;
+	width: 35%;
+	padding-left: 10%;
+}
+.lsection h4{
+	color:  white;
+}
+.rsection h4{
+	color: white;
+	text-align: center;
+}
+.rsection {
+	padding-right: 10%;
+	width: 25em;
+	padding-top: 3%;
+}
+.upper-footer{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.social-media img{
+
+	width: 2.5em;
+
+}
+.lelement img{
+	width: 15em;
+}
+.lelement{
+	padding-left: 10%;
+}
+.pic img{
+	width: 20em;
+}
+.relement img{
+	width: 7em;
+}
+.relement{
+	padding-right: 10%;
+
+}
+.lower-footer{
+	display:  flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.copyright{
+	color: white;
+}
+.links a:after{
+	content: '\00B7';
+	padding-left: 0.3em;
+}
+.links a{
+	color:  white;
+}
+.social-media{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
