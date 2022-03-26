@@ -70,7 +70,7 @@
 }
 
 .right .rightIMG img {
-    width: clamp(17rem, 30vw, 30rem);
+    width: clamp(17rem, 27vw, 30rem);
 }
 
 /* Rama img */
