@@ -1,3 +1,7 @@
+.sponsori {
+    opacity: 0;
+}
+
 #slider {
     height: 400px;
     display: flex;

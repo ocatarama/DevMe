@@ -1,3 +1,21 @@
+/* ===================== AMAZING PEOPLE THAT SUPPORT US ===================== */
+var executed4 = 0;
+document.addEventListener('scroll', () => {
+    var x = document.getElementById("sponsori");
+    var offset = 0.0;
+ 
+    if((window.pageYOffset >= x.offsetTop - 300 ) && executed4 == 0)
+    {
+        executed4 = 1;
+        setInterval(function(){
+            offset += 0.1;  
+            x.style.opacity = offset;
+        }, 50);    
+
+    }
+}, false); 
+
+/* ===================== VARIABILA PENTRU SLIDER ===================== */
 let slider = tns ({
      container: ".my-slider",
      "slideBy" : "1",
@@ -19,4 +37,5 @@ let slider = tns ({
              items: 1
          }
      }
-})
+});
+
