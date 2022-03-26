@@ -1,7 +1,7 @@
 @import url(constants.css);
 
 .navbar {
-    background-color: var(--darkgrey);
+    background-color: transparent;
     height: 80px;
     width: 100%;
     display: flex;
