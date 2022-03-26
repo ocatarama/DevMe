@@ -162,7 +162,31 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background: url("../img/Backgrounds/back2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid var(--cement-white);
 }
+
+.howto-step:nth-child(2) {
+    transform: translateX(200%);
+    transition: 0.9s;
+}
+
+.howto-step:nth-child(3) {
+    transform: translateX(-200%);
+    transition: 0.9s;
+
+    background: url("../img/Backgrounds/back1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.howto-step:nth-child(4) {
+    transform: translateX(200%);
+    transition: 0.9s;
+}
+
 
 .howto-step-number {
     flex:1.5;
@@ -207,22 +231,6 @@
     text-justify: auto;
     font-size: clamp(0.8rem, 1vw, 1.2rem);
 }
-
-.howto-step:nth-child(2) {
-    transform: translateX(200%);
-    transition: 0.9s;
-}
-
-.howto-step:nth-child(3) {
-    transform: translateX(-200%);
-    transition: 0.9s;
-}
-
-.howto-step:nth-child(4) {
-    transform: translateX(200%);
-    transition: 0.9s;
-}
-
 /* -======================= MEDIA SCREEN (LAPTOP MODE) =======================- */
 
 @media screen and (min-width: 1080px) {
@@ -238,8 +246,8 @@
 
 @media screen and (min-width: 650px) {
     .back-wrapper {
-        height: 100%;
-        background: url("../img/Backgrounds/back2.jpg");
+        height: 100vh;
+        background: url("../img/Backgrounds/back1.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
