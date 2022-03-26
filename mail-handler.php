@@ -4,16 +4,15 @@
         $msg=$_POST['msg'];
 
         $to='devme@lsaciasi.ro';
-        $subjet="Question from website | ".$email;
-        $messaje="Email: ".$email."\n"."Intrebare: \n\n".$msg;
-        $headers="From: ".$email;
+        $subject="Question from website | ".$email;
+        $message="Email: ".$email."\nIntrebare: ".$msg;
+        $headers="Location: index2.html";
 
-        if(mail($to, $subject, $message, $headers)) {
-            alert('Email-ul a fost trimis cu succes. Asteapta pe email un raspuns de la noi!');
-            $email="";
-            $msh="";
+        if(mail($to, $subject, $message)) {
+            header("Location: index2.html");
         }
-        else
-            alert('Ceva nu a mers cum trebuie...');
+        else {
+            echo "Ceva nu a mers bine...";
+        }
     }
 ?>
