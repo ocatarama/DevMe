@@ -8,8 +8,10 @@ document.addEventListener('scroll', () => {
     {
         executed3 = 1;
         setInterval(function(){
-            offset += 0.1;  
-            x.style.opacity = offset;
+            if(offset < 1){
+                offset += 0.1;  
+                x.style.opacity = offset;
+            }
         }, 50);    
 
     }
@@ -50,8 +52,10 @@ document.addEventListener('scroll', () => {
     {
         executed1 = 1;
         setInterval(function(){
-            offset += 0.1;  
-            x.style.opacity = offset;
+            if(offset < 1){
+                offset += 0.1;  
+                x.style.opacity = offset;
+            }
         }, 50);    
 
     }
@@ -67,8 +71,10 @@ document.addEventListener('scroll', () => {
     {
         executed2 = 1;
         setInterval(function(){
-            offset += 0.1;  
-            x.style.opacity = offset;
+            if(offset < 1){
+                offset += 0.1;  
+                x.style.opacity = offset;
+            }
         }, 50);    
 
     }
