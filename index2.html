@@ -9,10 +9,20 @@
         <link rel="stylesheet" href="css/navbar.css"> <!--Navbar css-->
         <link rel="stylesheet" href="css/acasa.css"> <!--Acasa/Main css-->
         <link rel="stylesheet" href="css/info.css"> <!--Info css-->
+<<<<<<< HEAD
         <link rel="stylesheet" href="css/footer.css"> <!--Footer css-->
 
+=======
+        <link rel="stylesheet" href="css/sponsori.css"> <!--Sponsori css-->
+    
+>>>>>>> animations
         <!-- Font-Awesome -->
         <script src="https://kit.fontawesome.com/2ee69d0673.js" crossorigin="anonymous"></script>
+
+        <!-- Tiny Slider -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
     </head>
 
     <body>
@@ -80,10 +90,10 @@
 
         <div class="info" id="info">
             <div class="i-title">
-                <h2>What is DevMe?</h2>
+                <h2 id="whatIs">What is DevMe?</h2>
             </div>
 
-            <div class="i-about">
+            <div class="i-about" id="whatAbout">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="250" viewBox="0 0 24 302.349">
                     <g id="Group_50" data-name="Group 50" transform="translate(0 -0.344)">
                       <line id="Line_14" data-name="Line 14" y2="289.508" transform="translate(11.5 12.184)" fill="none" stroke="#f1f1f1" stroke-linecap="round" stroke-width="2"/>
@@ -104,8 +114,8 @@
                 </div>
             </div>
 
-            <div class="i-signs">
-                <div class="i-where">
+            <div class="i-signs" id="iSigns">
+                <div class="i-where" id="iWhere">
                     <span>
                         <i class="fa-solid fa-location-dot"></i>
                         <h4>Unde?</h4>
@@ -113,7 +123,7 @@
                     <p>Campus "Tudor Vladimirescu", Iaşi</p>
                 </div>
 
-                <div class="i-when">
+                <div class="i-when" id="iWhen">
                     <span>
                         <i class="fa-solid fa-calendar-days"></i>
                         <h4>Când?</h4>
@@ -122,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="i-imgs">
+            <div class="i-imgs" id="imgs">
                 <div class="img-junk">
                     <a href="https://www.instagram.com/lsaciasi/" target="_blank">
                         <div class="img-overlay">
@@ -147,8 +157,8 @@
                 </div>
             </div>
 
-            <div class="i-howto" id="howToTitle">
-                <h2 class="howto-title">How to hack your summer</h2>
+            <div class="i-howto" id="howTo">
+                <h2 class="howto-title" id="howto-title">How to hack your summer</h2>
 
                 <div class="howto-step" id="step1">
                     <div class="howto-step-number">
@@ -203,7 +213,70 @@
                 </div>
             </div>
         </div>
-        <!-- Footer -->
+
+        <!-- ============ SPONSORI ============ -->
+        <div class="sponsori" id="sponsori">
+            <section id="slider">
+                <div class="containerSlider">
+                    <div class="subcontainer">
+                        <div class="slide-title">
+                            <h4>Amazing people that support us</h3>
+                        </div>
+                        <div class="slider-wrapper">
+                            <div class="my-slider">
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-1">
+                                            <a href="#">
+                                                <img src="img/logo/Sponsori/Beenear480.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-2">
+                                            <a href="#">
+                                                <img src="img/logo/Sponsori/fablab.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-3">
+                                            <a href="#">
+                                                <img src="img/logo/Sponsori/Beenear480.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-4">
+                                            <a href="#">
+                                                <img src="img/logo/Sponsori/fablab.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-5">
+                                            <a href="#">
+                                                <img src="img/logo/Sponsori/Beenear480.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ============ FOOTER ============ -->
         <div class="footer">
             <div class="upper-footer">
                 <div class="lsection">
@@ -260,6 +333,10 @@
         <script src="js/navbar.js"></script>
         <script src="js/scrollbar.js"></script>
         <script src="js/info.js"></script>
+<<<<<<< HEAD
         <script src="js/carousel.js"></script>
+=======
+        <script src="js/slider.js"></script>
+>>>>>>> animations
     </body>
 </html>
