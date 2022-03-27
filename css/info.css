@@ -266,7 +266,7 @@
 
     .i-signs {
         flex-direction: row;
-        padding-top: 50px;
+        padding: 60px 0;
     }
 
     .i-where, .i-when {
