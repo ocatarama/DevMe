@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/calendar.css"> <!--Calendar css-->
         <link rel="stylesheet" href="css/sponsori.css"> <!--Sponsori css-->
         <link rel="stylesheet" href="css/footer.css"> <!--Footer css-->
+        <link rel="stylesheet" href="css/buton_style.css"> <!--Butonul "back top" css-->
     
         <!-- Font-Awesome -->
         <script src="https://kit.fontawesome.com/2ee69d0673.js" crossorigin="anonymous"></script>
@@ -23,10 +24,11 @@
     </head>
 
     <body>
+        <button onclick="topFunction()" id="myBtn" title="Inapoi la începutul paginii">Home</button>
         <navbar class="navbar">
             <div class="navContainer">
                  <a href="#info" class="navitem">Informatii</a>
-                 <a href="#" class="navitem">Calendar</a>
+                 <a href="#calendar" class="navitem">Calendar</a>
 
                  <img class="navlogo" src="img/logo/DevMe/DevMeLogo.png">
 
@@ -42,9 +44,9 @@
 
             <div class="navButtons" id="n-btns">
                 <a href="#info" class="navitem">Informatii</a>
-                <a href="#" class="navitem">Calendar</a>
-                <a href="#" class="navitem">Sponsori</a>
-                <a href="#" class="navitem">Contact</a>
+                <a href="#calendar" class="navitem">Calendar</a>
+                <a href="#sponsori" class="navitem">Sponsori</a>
+                <a href="#footer" class="navitem">Contact</a>
             </div>
         </navbar>
 
@@ -362,5 +364,6 @@
         <script src="js/scrollbar.js"></script>
         <script src="js/info.js"></script>
         <script src="js/slider.js"></script>
+        <script src="js/top.js"></script>
     </body>
 </html>
