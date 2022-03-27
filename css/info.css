@@ -237,7 +237,7 @@
 
 @media screen and (min-width: 650px) {
     .back-wrapper {
-        height: 100vh;
+        height: 80vh;
         background: url("../img/Backgrounds/back1.jpg");
         background-size: cover;
         background-attachment: fixed;
