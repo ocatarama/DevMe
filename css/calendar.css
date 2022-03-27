@@ -1,36 +1,57 @@
 @import url(constants.css);
 
+#calendar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+#calendar table {
+	max-width: 600px;
+}
+
+#calendar h2{
+	border-bottom: 2px solid var(--cement-white);
+	text-align: center;
+}
+
 #calendar td{
 	color: var(--cement-white);
 	height: 5em;
-
-
+	font-size:18px;
 }
 table{
 	border-spacing: 0;
 }
-#calendar h2{
-	border-bottom: 2px solid var(--cement-white);
-	width: 60%;
-	text-align: center;
-}
-#calendar{
-	padding-left: 30%;
-	padding-bottom: 30%;
-	
-}
 .leftc{
 	border-bottom: 1px solid var(--cement-white);
 	text-align: center;
-	width: 10em;
+	max-width: 11em;
+	min-width: 8em;
 	font-weight: 800;
+	padding-right: 12px;
 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.leftc span {
+	width: min-content;
+}
+
+.leftc span:first-child {
+	text-align: right;
+}
+.leftc span:last-child {
+	text-align: left;
 }
 .rightc{
 	border-bottom: 1px solid var(--cement-white);
 	border-left: 1px solid var(--cement-white);
 	text-align: left;
-	padding-left: 10%;
+	padding-left: 5%;
 }
 .last{
 	border-bottom: 0px;
@@ -39,9 +60,5 @@ table{
 	#calendar{
 		padding-left: 7%;
 		padding-right: 7%;
-	}
-	#calendar h2{
-		margin-left: 20%;
-		width: 70%;
 	}
 }
