@@ -15,6 +15,20 @@
 	font-weight: 600;
 	margin-bottom: 20px;
 }
+.lsection>p{
+	margin-bottom: 20px!important;
+}
+.lsection p {
+	margin: 0;
+}
+.lsection span p{
+	font-size: clamp(1rem, 1.2vw, 1.3rem);
+	padding-left: 1em;
+}
+.lsection .footer-tel {
+	color: var(--gold);
+	font-weight: 400;
+}
 .rsection {
 	padding-right: 10%;
 	width: 35%;
@@ -129,13 +143,20 @@
 .copyright{
 	color: white;
 }
+@media (max-width: 860px) {	
+.lsection span p{
+	display:flex;
+	flex-direction:column;
+}
+}
 
 @media (max-width: 768px){
-	html, body{
-		max-width: 100%;
-		overflow-x: hidden;
-	}
-	.upper-footer{
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.upper-footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

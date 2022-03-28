@@ -14,6 +14,9 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  var contor = 1;
+    var inter = setInterval(() => {
+      document.documentElement.scrollTop = (document.documentElement.scrollTop > 0) ? document.documentElement.scrollTop - contor : clearInterval(inter);
+      contor += 1;
+    }, 1);
 }

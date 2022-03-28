@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Înscrieri | DevelopMe Iaşi</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+        <link rel="stylesheet" href="css/index.css"> <!--Main css-->
+        <link rel="stylesheet" href="css/navbar.css"> <!--Navbar css-->
+
+        <style>
+            .navContainer {
+                width: 100%!important;
+                align-items: center!important;
+                justify-content:space-between!important;
+                padding: 0 50px;
+            }
+
+            .navContainer a {
+                color: #E8E8E8;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            .navContainer a:hover {
+                text-decoration: underline;
+            }
+
+            form {
+                margin-top: 100px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;;
+            }
+
+            @media screen and (max-width: 600px){
+                .navContainer {
+                    padding: 0 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <navbar class="navbar">
+            <div class="navContainer">
+                <a href="https:\\devme.lsaciasi.ro">
+                    <img class="navlogo" src="img/logo/DevMe/DevMeLogo.png">
+                </a>
+
+                 <a href="https:\\devme.lsaciasi.ro">< Inapoi la pagina principala</a>
+            </div>
+        </navbar>
+
+        <form id="contact" action="https://docs.google.com/forms/u/4/d/e/1FAIpQLScnjSLUZvENqO55nSMjtKJheenAQZrDnPTSDYfeFPmCoeqxsg/formResponse">
+
+            <label>Nume si prenume:</label>
+            <input type="text" required name="entry.165016867" id="Name">
+
+            <label>Numar de telefon:</label>
+            <input type="text" required name="entry.1441657277" id="Numar">
+
+            <label>Judetul si orasul in care locuiesti:</label>
+            <input type="text" required name="entry.1114133345" id="Judet">
+
+            <label>Liceul la care studiezi:</label>
+            <input type="text" required name="entry.522162434" id="Liceu">
+
+            <label>De ce doresti sa te alaturi acestui grup?</label>
+            <input type="text" required name="entry.95201860" id="motiv">
+
+            <label>Cum ai aflat de facultatea noastra? Detaliaza:</label>
+            <input type="text" required name="entry.1289435547" id="Facultate">
+
+            <label>Esti de acord cu GDPR-ul nostru?</label>
+            <span>
+                <input type="checkbox" required name="entry.103790787" id="GDPR">
+                <label for="#GDPR">Da</label>
+            </span>
+
+            <input type="submit" value="submit">
+
+        </form>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+            function postToGoogle() {
+            var field1 = $("#Name").val();
+            var field2 = $("#Numar").val();
+            var field3 = $("#Judet").val();
+            var field4 = $("#Liceu").val();
+            var field5 = $("#motiv").val();
+            var field6 = $("#Facultate").val();
+            var field7 = $("#GDPR").val();
+
+            $.ajax({
+                url: "{https://docs.google.com/forms/u/4/d/e/1FAIpQLScnjSLUZvENqO55nSMjtKJheenAQZrDnPTSDYfeFPmCoeqxsg/formResponse}",
+                
+                data: {
+                "entry.165016867": field1,
+                "entry.1441657277": field2,
+                "entry.1114133345": field3,
+                "entry.522162434": field4,
+                "entry.95201860": field5,
+                "entry.1289435547": field6,
+                "entry.103790787": field7
+                },
+                type: "POST",
+                dataType: "xml",
+                success: function (d) {
+                    $('#contact').trigger('reset');
+                },
+                error: function (x, y, z) {
+                    $('#contact').trigger('reset');
+                }
+            });
+            return false;
+            }
+        </script>
+    </body>
+</html>

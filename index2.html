@@ -24,7 +24,7 @@
     </head>
 
     <body>
-        <button onclick="topFunction()" id="myBtn" title="Inapoi la începutul paginii">Home</button>
+        <button onclick="topFunction()" id="myBtn" title="Inapoi la începutul paginii">Up</button>
         <navbar class="navbar">
             <div class="navContainer">
                  <a href="#info" class="navitem">Informatii</a>
@@ -246,7 +246,7 @@
                         -
                         <span>20 Iunie</span>
                     </td>
-                    <td class="rightc">Plata taxei de înscriere, semnarea acordului parental și a regulamentului</td>
+                    <td class="rightc">Plata taxa, semnare acord parental și regulament</td>
                 </tr>
                 <tr>
                     <td class="leftc last">
@@ -327,12 +327,16 @@
                 <div class="lsection">
                     <h4>Despre LSAC</h4>
                     <p>Liga Studenților Facultății de Automatică și Calculatoare (LSAC) s-a înființat în anul 2005, fiind o organizație studențească, non-guvernamentală, non-profit și apolitică ce dorește să le ofere tuturor o studenție cât mai frumoasă prin intermediul activităților ce sunt organizate anual.</p>
+                    <span>
+                        <p>Arina Azamfirei: <span class="footer-tel">0741 125 996</span></p>
+                        <p>Ovidiu Cătăramă: <span class="footer-tel">0741 309 898</span></p>
+                    </span>
                 </div>
                 <div class="rsection">
                     <form class="footer-form" method="POST" action="mail-handler.php">
                         <h5>Ai vreo intrebare?</h5>
-                        <input type="text" placeholder=" Email-ul tau aici" name="email">  
-                        <input type="text" placeholder=" Intrebarea ta aici" name="msg">
+                        <input type="email" placeholder=" Email-ul tau aici" name="email" required>  
+                        <input type="text" placeholder=" Intrebarea ta aici" name="msg" required>
                         <input type="submit" value="Întreabă-ne" class="form-submit" name="submit">
                     </form>
                     <h5>Sau verifică profilurile de social media</h5>
@@ -374,7 +378,7 @@
         </div>
          
         <!-- JQUERRY -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
         <!-- SCRIPTS -->
         <script src="js/countdown.js"></script>
