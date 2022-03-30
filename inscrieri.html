@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="css/index.css"> <!--Main css-->
         <link rel="stylesheet" href="css/navbar.css"> <!--Navbar css-->
+        <link rel="stylesheet" href="css/footer.css"> <!--Footer-->
 
         <style>
             .navContainer {
@@ -15,7 +16,6 @@
                 justify-content:space-between!important;
                 padding: 0 50px;
             }
-
             .navContainer a {
                 color: #E8E8E8;
                 text-decoration: none;
@@ -26,14 +26,53 @@
                 text-decoration: underline;
             }
 
-            form {
+            .titleh2 {
+                margin: 0;
                 margin-top: 100px;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+
+            .container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 60px;
+            }
+
+            .container form {
                 color: white;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: center;
-                
+                width: 60%;
+                border: 2px solid var(--cement-white);
+                padding: 20px 30px;
+            }
+
+            form .form-title {
+                font-weight: 800;
+                color: var(--gold);          
+                margin-top: 50px;
+            }
+
+            form a {
+                color: var(--gold);
+            }
+
+            form .form-title:first-of-type {
+                margin-top: 0;
+            }
+
+            form .form-desc {
+                font-weight: 200;
+                font-style:italic;
+                font-size: 14px;
+                padding-left: 10px;
+                margin :0;
+                margin-bottom: 10px;
             }
 
             .camp-input{
@@ -42,9 +81,9 @@
                 border-left: 0px;
                 border-right: 0px;
                 border-bottom: 2px solid #F8C401;
-                margin-top: 10px;
-                margin-bottom: 10px;
+                margin: 10px 0;
                 color: white;
+                width: 100%;
 
             }
             .sender{
@@ -57,6 +96,7 @@
                 border-radius: 10px;
                 cursor: pointer;
                 transition: .8s ease;
+                margin: 0 auto;
             }
             .sender:hover{
                 background-color: transparent;
@@ -82,71 +122,154 @@
             </div>
         </navbar>
 
-        <form id="contact" action="https://docs.google.com/forms/u/4/d/e/1FAIpQLScnjSLUZvENqO55nSMjtKJheenAQZrDnPTSDYfeFPmCoeqxsg/formResponse">
-
-            <label class="camp-name">Nume si prenume:</label>
-            <input type="text" required name="entry.165016867" id="Name" class="camp-input">
-
-            <label class="camp-name">Numar de telefon:</label>
-            <input type="text" required name="entry.1441657277" id="Numar" class="camp-input">
-
-            <label class="camp-name">Judetul si orasul in care locuiesti:</label>
-            <input type="text" required name="entry.1114133345" id="Judet" class="camp-input">
-
-            <label class="camp-name">Liceul la care studiezi:</label>
-            <input type="text" required name="entry.522162434" id="Liceu" class="camp-input">
-
-            <label class="camp-name">De ce doresti sa te alaturi acestui grup?</label>
-            <input type="text" required name="entry.95201860" id="motiv" class="camp-input">
-
-            <label class="camp-name">Cum ai aflat de facultatea noastra? Detaliaza:</label>
-            <input type="text" required name="entry.1289435547" id="Facultate" class="camp-input">
-
-            <label class="camp-name">Esti de acord cu GDPR-ul nostru?</label>
-            <span>
-                <input type="checkbox" required name="entry.103790787" id="GDPR">
-                <label for="#GDPR">Da</label>
-            </span>
-
-            <input type="submit" value="Submit" class="sender">
-
-        </form>
         
+        <h2 class="titleh2">Formular de inscrieri DevMe</h2>
+        <div class="container">
+            
+            <iframe name="hidden_iframe2" id="hidden_iframe2" style="display: none" onload="if(submitted){document.location.href='https://devme.lsaciasi.ro/';}"></iframe>
+            <form id="contact" 
+                action="https://docs.google.com/forms/u/4/d/e/1FAIpQLScnjSLUZvENqO55nSMjtKJheenAQZrDnPTSDYfeFPmCoeqxsg/formResponse"
+                target="hidden_iframe2"
+                method="POST"
+                onsubmit="submitted=true"
+                >
+
+                <p class="form-title">Câteva informaţii despre tine:</p>
+
+                <label class="camp-name">1. Nume si prenume:</label>
+                <input type="text" required name="entry." id="Name" class="camp-input">
+
+                <label class="camp-name">2. Şcoala şi oraşul în care înveţi:</label>
+                <input type="text" required name="entry." id="Name" class="camp-input">
+
+                <label class="camp-name">3. Email:</label>
+                <input type="email" required name="entry." id="Email" class="camp-input">
+
+                <label class="camp-name">4. Numărul personal de telefon:</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">5. Numărul unui părinte si numele acestuia:</label>
+                <p class="form-desc">Ex: Maria Popescu: 0700000000</p>
+                <input type="text" required name="entry." id="Judet" class="camp-input">
+
+                <label class="camp-name">6. Link către o reţea de socializare</label>
+                <p class="form-desc">[Instagram, Facebook] Te rugăm să pui un link către profilul tău, nu să ne dai numele/username-ul</p>
+                <input type="text" required name="entry." id="Liceu" class="camp-input">
+
+                <p class="form-title">Now let's talk business:</p>
+
+                <label class="camp-name">7. În ce clasă esti?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">8. Ce te-a determinat să alegi specializarea de real?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">9. Ţi-ai făcut o idee despre domeniul pe care ai vrea să îl studiezi după terminarea liceului?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">10. Iei în considerare să dai admiterea la facultatea noastră?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">11. Care sunt hobby-urile tale?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">12. Scrie un citat după care te ghidezi.</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">13. Spune-ne o reuşită cu care te mândreşti?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">14. Cum te-ai descrie ca persoană? Dă-ne câteva caracteristici.</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">15. Ai mai făcut vreodată voluntariat? Dacă da, unde şi cum?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">16. Ai mai fost vreodată într-o tabără de vară? Dacă da, în care?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">17. Cum ai auzit de tabăra noastră?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">18. Ce aşteptări ai de la această tabără?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">19. Eşti sigur că vei fi liber în acea perioadă?</label>
+                <p class="form-desc">9-17 Iulie</p>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <label class="camp-name">20. Ai vreo alergie sau restricţie alimentară?</label>
+                <input type="text" required name="entry." id="Numar" class="camp-input">
+
+                <p class="form-title">Mai sus ne-ai oferit nişte informaţii personale, aşa că vrem să te întrebăm următorul lucru:</p>
+
+                <label class="camp-name">21. Ești de acord ca LSAC să prelucreze datele tale personale mai sus menționate în concordanță cu regulamentele UE GDPR în vigoare?</label>
+                <p class="form-desc">GDPR se referă la protecţia datelor cu caracter personal pe care tu le-ai împărtăşit cu Liga Studenţilor Facultăţii de Automatică şi Calculatoare din Iaşi. Poţi citi mai multe aici: <a href="https://mfe.gov.ro/informatii-de-interes-public/solicitare-informatii-legislatie/protectia-datelor-cu-caracter-personal-gdpr/" target="_blank">Protecţia datelor cu caracter personal</a></p>
+                <span>
+                    <input type="checkbox" required name="entry.103790787" id="GDPR">
+                    <label for="#GDPR">Da</label>
+                </span>
+
+                <input type="submit" value="Submit" class="sender">
+
+            </form>
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="upper-footer">
+                <div class="lsection">
+                    <h4>Despre LSAC</h4>
+                    <p>Liga Studenților Facultății de Automatică și Calculatoare (LSAC) s-a înființat în anul 2005, fiind o organizație studențească, non-guvernamentală, non-profit și apolitică ce dorește să le ofere tuturor o studenție cât mai frumoasă prin intermediul activităților ce sunt organizate anual.</p>
+                    <span>
+                        <p>Arina Azamfirei: <span class="footer-tel">0741 125 996</span></p>
+                        <p>Ovidiu Cătăramă: <span class="footer-tel">0741 309 898</span></p>
+                    </span>
+                </div>
+                <div class="rsection">
+                    <form class="footer-form" method="POST" action="mail-handler.php">
+                        <h5>Ai vreo intrebare?</h5>
+                        <input type="email" placeholder=" Email-ul tau aici" name="email" required>  
+                        <input type="text" placeholder=" Intrebarea ta aici" name="msg" required>
+                        <input type="submit" value="Întreabă-ne" class="form-submit" name="submit">
+                    </form>
+                    <h5>Sau verifică profilurile de social media</h5>
+                    <div class="social-media">
+                        <div>
+                            <a href="https://www.facebook.com/DevMeByLSAC" target="_blank"><img src="img/logo/social/facebook.png"></a>
+                            <a href="https://www.instagram.com/devmebylsac/" target="_blank"><img src="img/logo/social/instagram.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="lower-footer">
+                    <div class="lelement">
+                        <a href="https:\\lsaciasi.ro" target="_blank">
+                            <img src="img/logo/LSAC/LSAC alb.png">
+                        </a>
+                    </div>
+                    <div class="melement">
+                        <div class="pic">
+                            <a href="https:\\devme.lsaciasi.ro">
+                                <img src="img/logo/DevMe/DevMeLogo.png">
+                            </a>
+                        </div>
+                        <div class="links">
+                            <a href="https:\\lsaciasi.ro" target="_blank">LSAC website</a>
+                            <a href="https:\\ac.tuiasi.ro" target="_blank">AC website</a>
+                            <a href="https:\\lsaciasi.ro/contact.html" target="_blank">LSAC contact</a>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright  &#169;2022 All rights reserved to LSAC Iasi</p>
+                        </div>
+                    </div>
+                    <div class="relement">
+                        <a href="https:\\lsaciasi.ro" target="_blank">  
+                            <img src="img/logo/AC_Iasi.png">
+                       </a>
+                    </div>
+                </div>
+        </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        <script>
-            function postToGoogle() {
-            var field1 = $("#Name").val();
-            var field2 = $("#Numar").val();
-            var field3 = $("#Judet").val();
-            var field4 = $("#Liceu").val();
-            var field5 = $("#motiv").val();
-            var field6 = $("#Facultate").val();
-            var field7 = $("#GDPR").val();
-
-            $.ajax({
-                url: "{https://docs.google.com/forms/u/4/d/e/1FAIpQLScnjSLUZvENqO55nSMjtKJheenAQZrDnPTSDYfeFPmCoeqxsg/formResponse}",
-                
-                data: {
-                "entry.165016867": field1,
-                "entry.1441657277": field2,
-                "entry.1114133345": field3,
-                "entry.522162434": field4,
-                "entry.95201860": field5,
-                "entry.1289435547": field6,
-                "entry.103790787": field7
-                },
-                type: "POST",
-                dataType: "xml",
-                success: function (d) {
-                    $('#contact').trigger('reset');
-                },
-                error: function (x, y, z) {
-                    $('#contact').trigger('reset');
-                }
-            });
-            return false;
-            }
-        </script>
     </body>
 </html>
