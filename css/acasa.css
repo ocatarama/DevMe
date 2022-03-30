@@ -34,7 +34,7 @@
     font-size: clamp(1rem, 1.4vw, 1.4rem);
 
     margin-right: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .left svg {
@@ -53,6 +53,28 @@
 .left .hometext span p:last-child {
     margin-top: 20px;
     width: 200px;
+}
+
+.left .homebutton {
+    text-decoration: none;
+    display: inline-block;
+    width: 33vw;
+    padding: 10px 40px;
+
+    border: 3px solid var(--gold);
+    border-radius: 7px;
+    background-color: var(--gold);
+    color: var(--darkgrey);
+    font-weight:600;
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
+    text-align: center;
+    transition: .7s ease;
+    margin-bottom: 50px;
+}
+
+.left .homebutton:hover {
+    background-color: transparent;
+    color: var(--gold);
 }
 
 .right{
@@ -108,8 +130,6 @@
 #countdown:after, #countdown:before {
     content: '\02015';
 }
-
-
 @media screen and (min-width: 650px)
 {
     .home {
@@ -136,6 +156,15 @@
 
     .left .hometext {
         margin-left: 10px;
+        margin-bottom: 2vw;
+    }
+    
+    .left .homebutton {
+        margin: 0;
+        margin-left: 9vw;
+        /* font-size: 20px; */
+        padding: 20px 40px;
+        width: 12vw;
     }
 
     .right {
@@ -144,5 +173,12 @@
 
     .rightIMG::before {
         bottom: -0.6vw;
+    }
+}
+
+@media screen and (max-width: 850px)
+{
+    .left .homebutton {
+        padding: 10px 40px;
     }
 }
