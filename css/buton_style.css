@@ -22,3 +22,21 @@
   background: var(--footer-background);
   border-color: var(--footer-background);
 }
+.signup{
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid var(--gold);
+  background-color: var(--gold);
+  color: var(--footer-background);
+  font-weight: 400;
+  transition: .8s ease;
+}
+.signup:hover{
+  color: var(--gold);
+  background: var(--footer-background);
+  border-color: var(--footer-background);
+}
