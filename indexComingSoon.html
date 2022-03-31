@@ -1,0 +1,238 @@
+<html>
+	<head>
+		<title> DevMe - Coming Soon </title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+	</head>
+	<style>
+		body, html {
+			padding: 0;
+			margin:  0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		body {
+			background: #141414;
+			position: relative;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		
+		#logo {
+			text-align: center;
+		}
+		
+		#logo img {
+			height: 10rem;
+			animation: logo-animation 5s;
+		}
+		
+		@keyframes logo-animation {
+		  from {opacity: 0;}
+		  to {opacity: 1;}
+		}
+		
+		.ml15 {
+		  font-weight: 800;
+		  font-size: 3em;
+		  text-transform: uppercase;
+		  letter-spacing: 0.2em;
+		  color: #25bc3b;
+		  font-family: 'Poppins', sans-serif;
+		}
+
+		.ml15 .word {
+		  display: inline-block;
+		  line-height: 1em;
+		  opacity: 0;
+		}
+	</style>
+	<body style="">
+		<div id="logo">
+			<img  src="logo-devme.png">
+			<h1 class="ml15">
+			  <span class="word">COMING</span>
+			  <span class="word">SOON</span>
+			</h1>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script>
+		anime.timeline({loop: false})
+		  .add({
+			targets: '.ml15 .word',
+			scale: [0, 1],
+			opacity: [0, 1],
+			easing: "easeOutCirc",
+			duration: 800,
+			delay: (el, i) => 1000 + 800 * i
+		  });
+  
+		const leftCircle = new mojs.Shape({
+		  shape:        'circle',
+		  fill:         '#ea3057',
+		  radius:       {'0%': '90%'},
+		  duration:     1000,
+		  isYoyo:       true,
+		  isShowStart:  true,
+		  easing:       'ease.out',
+		  left:	'10%',
+		  top: '100%',
+		  scale: 3
+		});
+		leftCircle.play();
+		
+		const rightCircle = new mojs.Shape({
+		  shape:        'circle',
+		  fill:         '#3a8df5',
+		  radius:       {'0%': '90%'},
+		  duration:     1000,
+		  isYoyo:       true,
+		  isShowStart:  true,
+		  easing:       'ease.out',
+		  left:	'90%',
+		  top: '10%',
+		  scale: 3,
+		  delay:500
+		});
+		rightCircle.play();
+		
+		
+		const rightYellowCircle = new mojs.Shape({
+		  shape:        'circle',
+		  fill:         'transparent',
+		  stroke:       '#fac307',    // or 'cyan'
+		  strokeWidth:  5,  
+		  radius:       {'0%': '90%'},
+		  duration:     700,
+		  isShowStart:  true,
+		  easing:       'ease.out',
+		  left:	'60%',
+		  top: '5%',
+		  scale: 1,
+		  delay:1000
+		});
+		rightYellowCircle.play();
+		
+		const leftYellowCircle = new mojs.Shape({
+		  shape:        'circle',
+		  fill:         'transparent',
+		  stroke:       '#fac307',    // or 'cyan'
+		  strokeWidth:  {1 : 5},  
+		  radius:       {'0%': '90%'},
+		  duration:     700,
+		  isShowStart:  true,
+		  easing:       'ease.out',
+		  left:	'40%',
+		  top: '95%',
+		  scale: 1,
+		  delay:1000
+		});
+		leftYellowCircle.play();
+		
+		
+		
+		const lineLeft1 = new mojs.Shape({
+		  shape:        'rect',
+		  radius:       3,
+		  radiusX:      {0 : 150}, // explicit radiusX
+		  left:         0,
+		  top:          0,
+		  fill:         "#ffffff",
+		  easing:       'ease.out',
+		  rotate:		45,
+		  duration:		1000,
+		  delay:		1200
+		});
+		lineLeft1.play();
+		
+		const lineLeft2 = new mojs.Shape({
+		  shape:        'rect',
+		  radius:       3,
+		  radiusX:      {0 : 200}, // explicit radiusX
+		  left:         "5%",
+		  top:          0,
+		  fill:         "#ffffff",
+		  easing:       'ease.out',
+		  rotate:		45,
+		  duration:		1000,
+		  delay:		1250
+		});
+		lineLeft2.play();
+		
+		const lineLeft3 = new mojs.Shape({
+		  shape:        'rect',
+		  radius:       3,
+		  radiusX:      {0 : 100}, // explicit radiusX
+		  left:         "10%",
+		  top:          0,
+		  fill:         "#ffffff",
+		  easing:       'ease.out',
+		  rotate:		45,
+		  duration:		1000,
+		  delay:		1250
+		});
+		lineLeft3.play();
+		
+		
+		const lineRight1 = new mojs.Shape({
+		  shape:        'rect',
+		  radius:       3,
+		  radiusX:      {0 : 150}, // explicit radiusX
+		  left:         "100%",
+		  top:          "100%",
+		  fill:         "#ffffff",
+		  easing:       'ease.out',
+		  rotate:		45,
+		  duration:		1000,
+		  delay:		1200
+		});
+		lineRight1.play();
+		
+		const lineRight2 = new mojs.Shape({
+		  shape:        'rect',
+		  radius:       3,
+		  radiusX:      {0 : 200}, // explicit radiusX
+		  left:         "95%",
+		  top:          "100%",
+		  fill:         "#ffffff",
+		  easing:       'ease.out',
+		  rotate:		45,
+		  duration:		1000,
+		  delay:		1250
+		});
+		lineRight2.play();
+		
+		const lineRight3 = new mojs.Shape({
+		  shape:        'rect',
+		  radius:       3,
+		  radiusX:      {0 : 100}, // explicit radiusX
+		  left:         "90%",
+		  top:          "100%",
+		  fill:         "#ffffff",
+		  easing:       'ease.out',
+		  rotate:		45,
+		  duration:		1000,
+		  delay:		1250
+		});
+		lineRight3.play();
+		
+		
+		
+		
+		
+	</script>
+	
+</html>
