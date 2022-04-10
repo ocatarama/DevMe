@@ -1,4 +1,5 @@
 /* ===================== AMAZING PEOPLE THAT SUPPORT US ===================== */
+/*
 var executed4 = 0;
 document.addEventListener('scroll', () => {
     var x = document.getElementById("sponsori");
@@ -16,8 +17,11 @@ document.addEventListener('scroll', () => {
 
     }
 }, false); 
+*/
 
 /* ===================== VARIABILA PENTRU SLIDER ===================== */
+
+/*
 let slider = tns ({
      container: ".my-slider",
      "slideBy" : "1",
@@ -40,4 +44,4 @@ let slider = tns ({
          }
      }
 });
-
+*/
