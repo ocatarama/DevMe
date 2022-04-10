@@ -44,7 +44,7 @@
 
 .slide-img {
     height: 180px;
-    width: 200px;
+    width: 50%;
     background-position: center;
     background-size: 100% auto;
     cursor: pointer;
@@ -66,4 +66,10 @@
     font-weight: 600;
     margin-top: 0;
     width: 100vw;
+}
+
+@media screen and (max-width: 780px) {
+    .slide-img {
+        width: 200px;
+    }
 }
