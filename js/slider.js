@@ -8,8 +8,10 @@ document.addEventListener('scroll', () => {
     {
         executed4 = 1;
         setInterval(function(){
-            offset += 0.1;  
-            x.style.opacity = offset;
+            if(offset < 1) {    
+                offset += 0.1;  
+                x.style.opacity = offset;
+            }
         }, 50);    
 
     }
