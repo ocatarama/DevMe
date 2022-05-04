@@ -102,7 +102,6 @@
             .sender:hover{
                 background-color: transparent;
                 color: #F8C401;
-                border-color: transparent;
             }
             
             .taxaText {
@@ -110,6 +109,11 @@
                 font-size: 16px;
                 color: red;
                 text-align: center;
+            }
+
+            .disabled {
+                background-color: transparent;
+                color: #F8C401;
             }
 
             @media screen and (max-width: 600px){
@@ -131,7 +135,8 @@
         </navbar>
 
         
-        <h2 class="titleh2">Formular de inscrieri DevMe</h2>
+        <h2 class="titleh2" style="margin-bottom: 0">Formular de inscrieri DevMe</h2>
+        <h2 class="titleh2" style="margin-top: 0">31 Martie - 1 Mai</h2>
         <h3 class="taxaText">Taxa pentru participarea la tabăra este de 150 lei. Aceasta va fi plătită ulterior înscrierii, după perioada de selecție.</h3>
         <div class="container">
             
@@ -213,7 +218,7 @@
                     <label for="Q21">Da</label>
                 </span>
 
-                <input type="submit" value="Submit" class="sender">
+                <input type="submit" value="Submit" class="sender disabled" disabled>
 
             </form>
         </div>
