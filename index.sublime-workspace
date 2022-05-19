@@ -4,8 +4,60 @@
 		"selected_items":
 		[
 			[
-				"sp",
+				"padd",
+				"padding-left\tproperty"
+			],
+			[
+				"align",
+				"align-self\tproperty"
+			],
+			[
+				"spac",
 				"space-between\tjustify-content"
+			],
+			[
+				"f",
+				"flex-start\tjustify-content"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"se",
+				"align-self\tproperty"
+			],
+			[
+				"text-",
+				"text-decoration\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"sp",
+				"space-around\tjustify-content"
+			],
+			[
+				"alig",
+				"align-items\tproperty"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"fle",
+				"flex-direction\tproperty"
 			],
 			[
 				"flex",
@@ -23,7 +75,7 @@
 			"file": "regulament.html",
 			"settings":
 			{
-				"buffer_size": 10320,
+				"buffer_size": 17800,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -114,15 +166,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10320,
+						"buffer_size": 17800,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10261,
-								10261
+								3742,
+								3742
 							]
 						],
 						"settings":
@@ -132,7 +184,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2623.2,
+						"translation.y": 1704.8,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

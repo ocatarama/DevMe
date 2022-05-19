@@ -34,7 +34,11 @@
             .navContainer a:hover {
                 text-decoration: underline;
             }
-
+            .first-title{
+                font-size: 3em;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
             .titleh2 {
                 margin: 0;
                 margin-top: 100px;
@@ -49,6 +53,23 @@
             }
             p{
                 text-align: center;
+            }
+            .empty{
+                padding-top: 10%;
+            }
+            .big-div{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .castigatori{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 1%;
+                font-size: 2em;
             }
             .mergi_coaie{/*Partea amuzanta e ca merge acum */
                 font-size: 1.7em;
@@ -94,6 +115,12 @@
             .linker{
                 color: cyan;
             }
+            .warning{
+                color: red;
+                align-self: center;
+                padding-left: 5%;
+                font-size: 1.2em;
+            }
     </style>
     <body>
         <navbar class="navbar">
@@ -105,6 +132,50 @@
                  <a href="https:\\devme.lsaciasi.ro">< Inapoi la pagina principala</a>
             </div>
         </navbar>
+        <div class="big-div">
+        <div class="empty">
+        </div>
+        <h1 class="first-title">Lista candidaților admiși în tabăra de vară pentru liceeni DevelopMe</h1>
+        <h4 class="warning">Atenție! Ordinea participanșilor în lista de mai jos nu are legătură cu punctajele obținute în urma interviurilor. <br>
+        Ordinea este alfabetică.</h4>
+            <ol>
+        <div class="castigatori">
+                <div class="col-l">
+                    <li>Ababei-Petrea Teodor</li>
+                    <li>Balan Livia-Oana</li>
+                    <li>Bejinariu Stefan</li>
+                    <li>Chelarașu Ana-Maria</li>
+                    <li>Ciobanu Calin Andrei</li>
+                    <li>Cobiliță Rareș-George</li>
+                    <li>Codita Andrei</li>
+                    <li>Coman Teodora</li>
+                    <li>Corodeanu Codrin</li>
+                    <li>Cuibar Anca-Ștefania</li>
+                    <li>Dumitrache Ivona Elisabeta Ioana</li>
+                    <li>Enache Brianna</li>
+                    <li>Hapaianu Cosmin George</li>
+                    <li>Ignat Marius - Florentin</li>
+                    <li>Irimia Khatteryna</li>
+                </div>
+                <div class="col-r">
+                    <li>Matei Denisa-Ioana</li>
+                    <li>Murariu Georgiana-Roxana</li>
+                    <li>Niculeț Rian</li>
+                    <li>Panaite Ana-Maria</li>
+                    <li>Rusu Dumitrita-Mihaela</li>
+                    <li>Salaru Ioana</li>
+                    <li>Sandu Raul Alexandru</li>
+                    <li>Sorin-Emanuel Dima</li>
+                    <li>Șoptică Antonie</li>
+                    <li>Tudora Dan-Alexandru</li>
+                    <li>Tureţchi Adriana Petronela</li>
+                    <li>Ungureanu Maia-Alexia</li>
+                    <li>Vieru Maria Karina</li>
+                    <li>Zaizan Cosmin</li>
+                    <li>Zvîncă Bianca</li>
+                </div>
+        </div>
+            </ol>
         <div class="titleh2">
             <h2>Regulament de desfășurare<br>
                 Tabără de Vară Pentru Liceeni “DevelopMe”<br>
@@ -261,6 +332,7 @@
                     </div>
                 </div>
         </div>
+    </div>
     </body>
     
 </html>
