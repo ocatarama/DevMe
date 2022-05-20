@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-align"
+			],
+			[
+				"alin",
+				"align-self\tproperty"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			],
+			[
 				"padd",
 				"padding-left\tproperty"
 			],
@@ -40,10 +56,6 @@
 				"text-decoration\tproperty"
 			],
 			[
-				"text",
-				"text-align\tproperty"
-			],
-			[
 				"sp",
 				"space-around\tjustify-content"
 			],
@@ -71,15 +83,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "regulament.html",
-			"settings":
-			{
-				"buffer_size": 17800,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -118,11 +121,11 @@
 	],
 	"file_history":
 	[
+		"/D/DevMe-LSAC/DevMe-LSAC/index.html",
 		"/D/DevMe-LSAC/DevMe-LSAC/regulament.html",
 		"/D/DevMe-LSAC/DevMe-LSAC/css/regulament.css",
 		"/D/DevMe-LSAC/DevMe-LSAC/index.sublime-project",
-		"/D/DevMe-LSAC/DevMe-LSAC/inscrieri.html",
-		"/D/DevMe-LSAC/DevMe-LSAC/index.html"
+		"/D/DevMe-LSAC/DevMe-LSAC/inscrieri.html"
 	],
 	"find":
 	{
@@ -157,39 +160,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "regulament.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17800,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3742,
-								3742
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1704.8,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
