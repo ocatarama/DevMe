@@ -121,6 +121,44 @@
                 padding-left: 5%;
                 font-size: 1.2em;
             }
+            .documents a{
+                color: cyan;
+                padding: 10%;
+                font-size: 1.2em;
+            }
+            @media (max-width: 769px){
+                .castigatori{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 1%;
+                font-size: 1.5em;
+                margin: auto;
+                }
+                .articole h3{
+                font-size: 1.5em;
+                font-weight:500;
+                color: #F8C401;
+                text-decoration: underline;
+                padding: 3%;
+                }
+                .intro {
+                    padding:3%;
+                }
+                .documents h4{
+                    padding: 5%;
+                }
+            }
+            @media (max-width: 321px){
+                .castigatori{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 1%;
+                font-size: 1.1em;
+                margin: auto;
+                }
+            }
     </style>
     <body>
         <navbar class="navbar">
@@ -181,6 +219,11 @@
                 Tabără de Vară Pentru Liceeni “DevelopMe”<br>
                 Prima ediție 2022
             </h2>
+        </div>
+        <div class="documents">
+            <h4>Regulamentul și acordul parental pot fi descărcate prin accesarea link-urilor de mai jos: </h4>
+            <a class="linker" href="https://drive.google.com/uc?export=download&id=1EgSG6SVPOFJBCxQ-k6wvShn70bl_KitA">Regulamentul Taberei de vară</a><br>
+            <a class="linker" href="https://drive.google.com/uc?export=download&id=1ShO1A39Mkhv9Fh_Pv9o7Uuq6qmTMGfgT">Acordul parental</a>
         </div>
         <div class="rules">
             <div class="intro">
