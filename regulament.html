@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Regulament | DevlopMe Iași</title>
@@ -47,12 +46,13 @@
             }
             h2{
                 font-size: 2.9em;
+                padding: 0 50px;
             }
             p, li{
                 color: white;
             }
             p{
-                text-align: center;
+                text-align: justify;
             }
             .empty{
                 padding-top: 10%;
@@ -82,14 +82,17 @@
                 align-items: center;
                 justify-content: space-around;
                 font-size: 1.2em;
+                padding: 0 10%;
             }
             
             .articole{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                align-content: center;
+                align-content: flex-start;
                 justify-content: space-around;
+                text-align: justify;
+                padding: 0 10%;
             }
             .intro{
                 display: flex;
@@ -101,6 +104,7 @@
 
             }
             .articole h3{
+                text-align: center;
                 font-size: 2em;
                 font-weight:500;
                 color: #F8C401;
@@ -109,44 +113,49 @@
             .liste{
                 padding-bottom: 10%;
             }
-            .narrow{
-                margin-left: 10%;
-                margin-right: 10%;
-            }
             .linker{
                 color: cyan;
             }
             .warning{
                 color: red;
                 align-self: center;
-                padding-left: 10%;
+                text-align: center;
+                padding: 0 50px;
                 font-size: 1.2em;
             }
+
             .documents a{
                 color: cyan;
-                padding: 10%;
                 font-size: 1.2em;
+                display: block;
+                text-align: center;
+
+            }
+
+            .documents h4 {
+                padding: 0 10%;
+                text-align: center;
             }
             @media (max-width: 1025px){
                 .castigatori{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                padding: 5%;
-                font-size: 1.5em;
-                margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 5%;
+                    font-size: 1.5em;
+                    margin: auto;
                 }
                 .articole h3{
-                font-size: 1.5em;
-                font-weight:500;
-                color: #F8C401;
-                text-decoration: underline;
-                padding: 7%;
+                    font-size: 1.5em;
+                    font-weight:500;
+                    color: #F8C401;
+                    text-decoration: underline;
+                    padding: 7%;
                 }
                 .intro {
                     padding:7%;
                 }
-                .documents h4{
+                .documents>h4{
                     padding: 8%;
                     text-align: center;
                 }
@@ -156,12 +165,12 @@
             }
             @media (max-width: 426px){
                 .castigatori{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                padding: 1%;
-                font-size: 1.1em;
-                margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding: 1%;
+                    font-size: 1.1em;
+                    margin: auto;
                 }
                 .mergi_coaie{
                     font-size: 1.2em;
@@ -190,10 +199,9 @@
         <div class="empty">
         </div>
         <h1 class="first-title">Lista candidaților admiși în tabăra de vară pentru liceeni DevelopMe</h1>
-        <h4 class="warning">Atenție! Ordinea participanșilor în lista de mai jos nu are legătură cu punctajele obținute în urma interviurilor. <br>
-        Ordinea este alfabetică.</h4>
-            <ol>
-        <div class="castigatori">
+        <h4 class="warning">Atenție! Ordinea participanţilor în lista de mai jos nu are legătură cu punctajele obținute în urma interviurilor. Ordinea este alfabetică.</h4>
+        <ol>
+            <div class="castigatori">
                 <div class="col-l">
                     <li>Ababei-Petrea Teodor</li>
                     <li>Balan Livia-Oana</li>
@@ -228,8 +236,8 @@
                     <li>Zaizan Cosmin</li>
                     <li>Zvîncă Bianca</li>
                 </div>
-        </div>
-            </ol>
+            </div>
+        </ol>
         <div class="titleh2">
             <h2>Regulament de desfășurare<br>
                 Tabără de Vară Pentru Liceeni “DevelopMe”<br>
@@ -250,82 +258,82 @@
 
             </div>
             <div class="intro2">
-                <h2 class="mergi_coaie"><b><i>Regulamentul următor este destinat pentru buna desfășurare a Taberei de Vară Pentru Liceeni “DevelopMe”, Prima ediție 2022. Următoarele reguli sunt concepute pe baza situațiile posibile la care nu putem aștepta, atat în cadrul unui tabere dar și în cadrul scenariului pandemic.</i></b>
+                <h2 class="mergi_coaie"><b><i>Regulamentul următor este destinat pentru buna desfășurare a Taberei de Vară Pentru Liceeni “DevelopMe”, Prima ediție 2022. Următoarele reguli sunt concepute pe baza situațiilor posibile la care ne putem aștepta, atat în cadrul unui tabere dar și în cadrul scenariului pandemic.</i></b>
                 </h2>
             </div>
             <div class="articole">
                 <h3>Art 1. Înscrierea și  selecția participanților</h3>
                 <ol>
-                    <li>Perioada de înscrieri în Tabără de Vară Pentru Liceeni “DevelopMe” este      31 Martie -  1 Mai.</li>
-                    <li>Înscrierea participanților se face completand formularul de înscriere de pe site: <a class="linker" href="https://devme.lsaciasi.ro/" target="_blank"> https://devme.lsaciasi.ro/</a></li>
-                    <li>Selecția participanților se va face pe baza răspunsurilor din formularul de înscriere dar și  printr-un interviu online/telefonic.</li>
-                    <li>În urma selecției organizatorii vor afișa lista cu cei 30 de participanți admiși dar și o lista cu rezerve.</li>
+                    <li>Perioada de înscrieri în Tabără de Vară Pentru Liceeni “DevelopMe” este      31 Martie -  1 Mai.    </li>
+                    <li>Înscrierea participanților se face completând formularul de înscriere de pe site: <a class="linker" href="https://devme.lsaciasi.ro/" target="_blank"> https://devme.lsaciasi.ro/</a></li>
+                    <li>Selecția participanților se va face pe baza răspunsurilor din formularul de înscriere, dar și printr-un interviu online/telefonic.</li>
+                    <li>În urma selecției, organizatorii vor afișa lista cu cei 30 de participanți admiși.</li>
                     <li>Confirmarea locului în tabără de către participant se va face prin plata taxei de participare și completarea documentelor necesare pana la data stabilita de organizator.</li>
                 </ol>
             </div>
             <div class="articole">
                 <h3>Art 2. Desfășurarea taberei</h3>
-                <p class="narrow">Participantii nu vor fi lasati nesupravegheati decât cu instiintarea (comunicarea unde vrea sa mearga, scopul și durata) responsabilului de grup pe distanțe mici (Campus Universitar).</p>
-                <p class="narrow">Activitățile ce vor fi desfășurate se vor face în 6 grupe de câte 5 elevi și 2 coordonatori. Pot sa existe modificare în anumite circumstanțe. De exemplu, se vor suplimenta organizatorii în caz de nevoie.</p>
+                <p class="narrow">Participantii nu vor fi lasati nesupravegheati decât cu înştiinţarea (comunicarea unde vor să meargă, scopul și durata) responsabilului de grup pe distanțe mici (Campus Universitar).</p>
+                <p class="narrow">Activitățile ce vor fi desfășurate se vor face în 6 grupe de câte 5 elevi, fiecare grupa avand 2 coordonatori. Pot sa existe modificări în anumite circumstanțe. De exemplu, se vor suplimenta organizatorii în caz de nevoie.</p>
             </div>
             <div class="articole">
                 <h3>Art 3. Obligațiile participanților: </h3>
                 <ol>
-                    <li>Participantii au obligația <b> de a  purta  ecusonul</b> atribuit la începutul taberei pe durata activităților cât și pe durata timpului liber, în afara camerei de cămin.</li>
-                    <li>Participantii au obligația <b>de a respecta calendarul de activități</b> al Taberei de Vară Pentru Liceeni “DevelopMe”.</li>
-                    <li>Participantii au obligația <b>de a respecta indicațiile organizatorilor, a coordonatorilor și a profesorilor</b> (în cadrul orelor de curs/laborator).<br><i> Nerespectarea acestora duce la sancționarea elevului (vezi Art 5).</i></li>
+                    <li>Participanții au obligația de <b>a purta ecusonul</b> atribuit la începutul taberei pe durata activităților cât și pe durata timpului liber, în afara camerei de cămin.</li>
+                    <li>Participanții au obligația de <b>a respecta calendarul de activități</b> al Taberei de Vară Pentru Liceeni “DevelopMe”.</li>
+                    <li>Participantii au obligația de <b>a respecta indicațiile organizatorilor, a coordonatorilor și a profesorilor</b> (în cadrul orelor de curs/laborator). <i>Nerespectarea acestora duce la sancționarea elevului (vezi Art 5).</i></li>
 
                 </ol>
             </div>
             <div class="articole">
-                <h3>Art 4. Cazare și Masa</h3>
-                <p class="narrow"> Pe parcursul desfășurării taberei Taberei de Vară Pentru Liceeni “DevelopMe” atat participantii cat și voluntarii vor avea cazare în căminele din campusul studențesc Tudor Vladimirescu și abonament la cantina.</p>
-                <p class="narrow">Pe durata prezenței  în camin/cantina participantii sun obligati sa respecte regulamentele interne. (<a class="linker" href="https://campus.tuiasi.ro/ghidul-studentului/">https://campus.tuiasi.ro/ghidul-studentului/</a>)</p>
+                <h3>Art 4. Cazare și masa</h3>
+                <p class="narrow"> Pe parcursul desfășurării taberei Taberei de Vară Pentru Liceeni “DevelopMe”, atât participanții cât și voluntarii vor avea cazare în căminele din campusul studențesc Tudor Vladimirescu și abonament la cantină.</p>
+                <p class="narrow"> Pe durata prezenței în cămin/cantină, participantii sunt obligați să respecte regulamentele interne. (<a href="https://campus.tuiasi.ro/ghidul-studentului/" target="_blank">Campus TUIaşi</a>).</p>
             </div>
             <div class="articole">
                 <h3>Art 5. Sancțiuni:</h3>
-                <p>Organizatori Taberei de Vară Pentru Liceeni “DevelopMe”  vor avea la dispoziție un sistem de avertisment/sanctionare a participanților.</p>
+                <p>Organizatorii Taberei de Vară Pentru Liceeni “DevelopMe”  vor avea la dispoziție un sistem de avertisment/sancționare a participanților.</p>
                 <p>Înainte de a da sancțiunea participantului, se va discuta cu acesta, cât și cu organizatorul care este înștiințat în legătură cu incidentul.</p>
-                <p>Aceste sancțiuni vor fi aduse în urma nerespectării regulamentului și a indicațiilor organizatorilor după cum urmează:</p>
+                <p> Aceste sancțiuni vor fi aduse în urma nerespectării regulamentului și a indicațiilor organizatorilor după cum urmează:                </p>
                 <ol>
                     <li><b>Sancțiunea de tipul “<i>Cei 7 ani de acasă</i>”:</b>(4  avertismente de acest tip duc la excluderea din program)</li>
                     <ol type="a" class="liste">
-                        <li>Nerespectarea programului și/sau a indicațiilor organizatorilor</li>
-                        <li>Nerespectarea regulamentelor interne ale spațiilor în care se desfășoară activitățile (cămin, cantină, facultate etc)</li>
+                        <li>Nerespectarea programului și/sau a indicațiilor organizatorilor;</li>
+                        <li>Nerespectarea regulamentelor interne ale spațiilor în care se desfășoară activitățile (cămin, cantină, facultate, etc.).</li>
                     </ol>
-                    <li><b>Sancțiunea de tipul “<i>Pe maidan era mai bine</i>”:</b>(2  avertismente de acest tip duc la excluderea din program)</li>
+                    <li><b>Sancțiunea de tipul <i>“Pe maidan era mai bine”</i>:</b>(2 avertismente de acest tip duc la excluderea din program)</li>
                     <ol type="a" class="liste">
-                        <li>Consum de alcool -în camin, cantina ,facultate</li>
-                        <li>Comportament neadecvat și agresiv</li>
-                        <li>Atac verbal (injurii,bullying) fata de alte persoane(participanți, organizatori , voluntari, cadre didactate etc.)</li>
-                        <li>Părăsirea  activităților sau a spațiului în care se desfășoară programul fără înștiințarea și consimtamantul organizatorului/responsabilul de grup</li>
+                        <li>Consum de alcool  -în camin, cantină, facultate;</li>
+                        <li>Comportament neadecvat și agresiv;</li>
+                        <li>Atac verbal (injurii, bullying) față de alte persoane (participanți, organizatori , voluntari, etc.);</li>
+                        <li>Părăsirea  activităților sau a spațiului în care se desfășoară programul fără înștiințarea și consimțământul organizatorului/responsabilului de grup.</li>
                     </ol>
-                    <li><b>Sancțiunea de tipul “<i>Vine Garda</i>”:</b>(1  avertisment de acest tip duc la excluderea din program)</li>
+                    <li><b>Sancțiunea de tipul “<i>Vine Garda</i>”:</b>(1  avertisment de acest tip duce la excluderea din program)</li>
                     <ol type="a" class="liste">
-                        <li>Comportament agresiv ce duce la altercatii verbale și fizice fata de ceilalți participanți sau organizatori</li>
-                        <li>Relații intime în public sau cămin</li>
-                        <li>Incidente ce duc la intervenția poliției</li>
-                        <li>Comercializare, detinerea sau consumul de substanțe psihoactive (stupefiante)</li>
-                        <li>Furt sau tentativa de furt</li>
-                        <li>Deținerea de arme albe sau de foc</li>
+                        <li>Comportament agresiv ce duce la altercaţii verbale și fizice faţă de ceilalți participanți sau organizatori;</li>
+                        <li>Relații intime în public sau cămin;</li>
+                        <li>Incidente ce duc la intervenția poliției;</li>
+                        <li>Comercializarea, detinerea sau consumul de substanțe psihoactive (stupefiante);</li>
+                        <li>Furt sau tentativa de furt;</li>
+                        <li>Deținerea de arme albe sau de foc.</li>
                     </ol>
                 </ol>
             </div>
             <div class="articole">
-                <h3>Art 6. Eliminarea din tabăra  a participantului.</h3>
-                <p>Organizatorii pot elimina participanți din tabara dacă pe parcursul desfasurarii activitatilor depășește numărul de sancțiuni permise(vezi ART 5).</p>
+                <h3>Art 6. Eliminarea din tabăra a participantului</h3>
+                <p>Organizatorii pot elimina participanți din tabara dacă pe parcursul desfășurării activităților depășește numărul de sancțiuni permise (vezi ART 5).</p>
                 <p>În funcție de gravitatea faptelor va fi contactat părintele participantului și/sau organele de poliție.</p>
             </div>
             <div class="articole number-7">
                 <h3>Art 7. Returnarea taxei de înscriere se poate face doar în  următoarele situații:</h3>
                 <ul>
-                    <li>Participantul renunța la locul din tabara și a  anunță organizatorii cu minim 14 zile înainte de startul Taberei;</li>
-                    <li>Anularea/amanarea taberei de către organizatori;</li>
+                    <li>Participantul renunță la locul din tabără și anunță organizatorii cu minim 14 zile înainte de startul Taberei;</li>
+                    <li>Anularea/amânarea taberei de către organizatori.</li>
                 </ul>
             </div>
             <div class="articole">
-                <h3>Art 8. Forta majora</h3>
-                <p>Organizatorii au libertatea de a anunța părinții și de ai suna la orice ora, indiferent de zi în cazul în care acesta considera ca este necesar.</p>
+                <h3>Art 8. Forța majoră</h3>
+                <p>Organizatorii au libertatea de a anunța părinții și de ai suna la orice ora, indiferent de zi, în cazul în care aceștia consideră că este necesar.</p>
             </div>
         </div>
         <div class="footer" id="footer">
